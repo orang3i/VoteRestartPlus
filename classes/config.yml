@@ -1,0 +1,33 @@
+#                                                      VOTE RESTART CONFIG
+#author : ORANG3I
+#version : 1.0
+
+settings:
+#in the  field below enter 1 or 2 , 1 for using  [restart when given number of players vote] 2 for  [restart when given percentage of players vote]
+  restartMode: 1
+#in the value field enter the number of votes needed to restart when the needed number of votes are cast the server will restart(only for restart mode 1)
+  numberOfVotesNeededToRestart: 3
+#in the value field below enter 25 or 50 or 75 or 100 if that percentage of players vote server will restart(only for restart mode 2)
+  percentageOfVotesNeededToRestart: 50
+#in the value field below enter in seconds how much time to delay when the vote is reached
+  delayTime: 3600
+
+#                                             CONFIGURABLE MESSAGES FOR VOTE RESTART
+
+#NOTE IF YOU USE CUSTOM MESSAGES YOU CAN DISPLAY HOW MUCH VOTES WERE CASTED
+
+#on the value field below enter message for informing the user that the vote has been restarted and how to vote
+#leave the enabled field empty to display default message
+prefix: "<GRADIENT:9281fb>VoteRestart</GRADIENT:eb93fc> <SOLID:FFFFFF>»"
+mode_1:
+  enabled: false
+  value: "<GRADIENT:9281fb>someone has voted now there are <number of votes> votes and <number of votes needed to restart> votes needed to restart</GRADIENT:eb93fc>"
+mode_1_delay_reached:
+  enabled: false
+  value: "<GRADIENT:9281fb>number of votes to restart reached restarting the server....</GRADIENT:eb93fc>"
+mode_2:
+  enabled: false
+  value: "<GRADIENT:9281fb>someone has voted to delay now there <percentage of votes> and <percentage required to restart> needed to restart</GRADIENT:eb93fc>"
+mode_2_delay_reached:
+  enabled: false
+  value: "<GRADIENT:9281fb>percentage of votes to restart is reached  restarting the server......</GRADIENT:eb93fc>"
